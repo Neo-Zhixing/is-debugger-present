@@ -12,3 +12,7 @@ features = [
     "Win32_Foundation",
     "Win32_System_Diagnostics_Debug",
 ]
+
+[target.'cfg(not(target_os = "windows"))'.dependencies.libc]
+version = "0.2"
+default-features = false
